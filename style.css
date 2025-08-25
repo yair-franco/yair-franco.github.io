@@ -1,0 +1,99 @@
+body {
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    background-color: whitesmoke;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    max-width: none;
+    text-align: center;
+}
+
+p, a {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.topCont {
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    background-image: url("img/bg1.png");
+    background-size: 100% 150px;
+    opacity: 0.9;
+    height: 75px;
+}
+
+.mainCont {
+    flex-grow: 1;
+}
+
+.bordered {
+    border: 1px solid;
+    padding: 10px;
+    background-color: rgba(131, 150, 255, 0.25);
+    margin: 10px;
+}
+
+.rounded {
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(131, 150, 255, 0.25);
+    max-width: 75%;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 10px;
+}
+
+.linkBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.footer {
+    background-color: gainsboro;
+    border-top: 1px solid;
+}
+
+.topLink {
+    margin: 10px;
+}
+
+.date {
+    text-align: center;
+    font-style: italic;
+}
+
+.note {
+    font-size: 12px;
+    margin: 5px;
+}

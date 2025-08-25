@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+    <title>Yair Franco</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="topCont">
+        <h1 class="title bordered">Yair Franco - Home</h1>
+        <div class="linkBox bordered">
+            <a class="topLink" href="..">Homepage</a>
+            <a class="topLink" href="./cv">CV</a>
+            <a class="topLink" href="https://www.github.com/yair-franco" target="_blank">GitHub</a>
+            <a class="topLink" href="https://www.linkedin.com/in/yair-franco/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="mainCont center-column">
+        <div class="rounded center-row">
+            <div class="center-column">
+                <h1>Yair Franco</h1>
+                <p>PhD student at the University of Nevada, Reno</p>
+            </div>
+            <img style="margin: 10px" src="./img/portrait.jpg" height="200px">
+        </div>
+        
+        <p class="rounded">
+            I am a seismology student interested in <b>earthquake hazards</b> and 
+            <b>earthquake early warning systems</b>. My career goal is to
+            help advance EEW in the U.S. and around the world.
+        </p>
+
+        <h1 class="secTitle">RESEARCH PROJECTS</h1>
+
+        <div class="sectCont rounded center-column">
+            <h2>
+                Solving Near-Fault Data Scarcity Using Earthquake Simulations to Improve Seismic Hazard Analysis of Normal Faults
+            </h2>
+            <p class="date">August 2024 - present</p>
+            <p>
+                For my first PhD project, I am analyzing the hazards of normal-faulting
+                earthquakes. Because these earthquakes are less common than events of 
+                different fault mechanisms, like strike-slip, ground motion data for normal-slip
+                events is more scarce. This may have an impact on our current understanding
+                of hazards, as hazard models rely on such data.
+            </p>
+            <p>
+                One way to mitigate this issue is by using synthetic data from earthquake simulations.
+                In my project, I aim to use <a href="https://seissol.org" target="_blank">SeisSol</a>,
+                a software tool for earthquake simulations, to compare the ground motion behaviors
+                of normal faults in dynamic rupture simulations with real ground motion data.
+            </p>
+            <a class="bordered" href="https://github.com/yair-franco/Normal-Fault-Sim" target="_blank">
+                Visit the GitHub repository for my <b>simulation data analysis code</b>.
+            </a>
+            <a class="bordered" href="https://github.com/yair-franco/GMDB-Data-Analysis" target="_blank">
+                Visit the GitHub repository for my <b>ground motion data analysis code</b>.
+            </a>
+            <p class="note">
+                Note: as this is a project in progress, the code found in the repositories is not final,
+                and may not have been polished for readability yet.
+            </p>
+        </div>
+
+        <div class="sectCont rounded center-column">
+            <h2>Cracking the Hayward Fault's Recurrence Interval</h2>
+            <p class="date">February 2024 - August 2024</p>
+            <p>
+                For my last undergrad research project at UC Berkeley I developed a
+                workflow in a Jupyter Notebook for recreating the Monte Carlo simulation
+                of the recurrence interval of the Hayward Fault, as published in
+                <a href="https://doi.org/10.1029/2007JB004998" target="_blank">Parsons (2008)</a>.
+            </p>
+            <p>
+                The goal for this project was to find if the 16-year period since the
+                method had been applied to
+                <a href="https://doi.org/10.1029/2008GL035887" target="_blank">the Hayward Fault</a>
+                was statistically significant enough to yield a better fitting value for the
+                recurrence interval. Since the last earthquake on the Fault occurred in 1868
+                <span id="haywardTimer">(over 150 years ago))</span>, and the recurrence interval
+                is thought to be close to that, we considered 16 years to be a statistically
+                significant wait.
+            </p>
+            <a class="bordered" href="https://github.com/yair-franco/hayward_sequence_sim" target="_blank">
+                Visit the repository for the workflow I developed for this project.
+            </a>
+        </div>
+
+        <div class="sectCont rounded center-column">
+            <h2>
+                Heartbeat of a Volcano: Detecting Seismicity in the Valles Caldera, 
+                New Mexico, Using Machine Learning
+            </h2>
+            <p class="date">May 2023 - August 2023</p>
+            <p>
+                This project was my URISE 
+                (now known as <a href="https://www.earthscope.org/education/student-internships/resess/" target="_blank">RESESS</a>)
+                undergraduate intern project. I developed a Python workflow to analyze geophone
+                array records taken in 2019 to assess the level of activity in the Valles Caldera, New Mexico.
+            </p>
+            <p>
+                To analyze seismicity in the caldera, I employed Seisbench, a machine learning library for seismic phase
+                detection. Using detection models trained on different datasets, we generated P and S wave
+                picks which we would use to create a catalogue of earthquakes in the geophone array data.
+                However, we found that the geophone data was full of noise from summer thunderstorms in the
+                caldera, especially from lightning strikes. While we could not create a comprehensive
+                earthquake catalog from this data, we were able to present conclusions about the reliability
+                of current machine learning models for earthquake phase picking at AGU.
+            </p>
+            <a class="bordered" href="https://www.earthscope.org/news/intern-spotlight-yair-franco-urise/" target="_blank">
+                Visit my Earthscope intern spotlight page.
+            </a>
+            <a class="bordered" href="https://ui.adsabs.harvard.edu/abs/2023AGUFM.S31E0396F/abstract" target="_blank">
+                View the AGU abstract for this project.
+            </a>
+            <a class="bordered" href="./valles/">
+                View the AGU poster for this project.
+            </a>
+            <p class="note">
+                Unfortunately, the code for this project is not publicly available.
+            </p>
+        </div>
+
+        <div class="sectCont rounded center-column">
+            <h2>The Earthquake Traffic Light</h2>
+            <p class="date">October 2022 - May 2023</p>
+            <p>
+                My first undergrad research project at UC Berkeley involved creating a workflow for
+                analyzing spatiotemporal changes in b-value in the San Francisco Bay Area. We used data
+                from the Northern California Seismic Network to calculate b-values in the area dating to 1984.
+                The goal of this project was to test a method proposed by
+                <a href="https://doi.org/10.1038/s41586-019-1606-4" target="_blank">Gulia & Wiemer (2019)</a>
+                that would distinguish foreshocks from mainshocks and aftershocks in real time.
+                If successful, this method would be useful for assessing real-time hazard analysis
+                when a moderately large earthquake occurs, as it would provide a way to determine if a
+                mainshock will follow it. However, in our execution, the method proved unsuccessful due to a scarcity of
+                sufficiently large (M>6.0) earthquakes in our dataset.
+            </p>
+            <a class="bordered" href="https://github.com/yair-franco/traffic_light_project" target="_blank">
+                Visit the GitHub repository for this project.
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p id="lastUpdate"></p>
+    </div>
+
+
+</body>
