@@ -9,11 +9,11 @@
 <body>
     <div class="topCont">
         <h1 class="title bordered">Yair Franco - Home</h1>
-        <div class="linkBox bordered">
-            <a class="topLink" href="..">Homepage</a>
-            <a class="topLink" href="./cv">CV</a>
-            <a class="topLink" href="https://www.github.com/yair-franco" target="_blank">GitHub</a>
-            <a class="topLink" href="https://www.linkedin.com/in/yair-franco/" target="_blank">LinkedIn</a>
+        <div class="linkBox center-row">
+            <a class="topLink bordered" href="..">Homepage</a>
+            <a class="topLink bordered" href="./cv">Curriculum Vitae</a>
+            <a class=" bordered" href="https://www.github.com/yair-franco" target="_blank">GitHub</a>
+            <a class="topLink bordered" href="https://www.linkedin.com/in/yair-franco/" target="_blank">LinkedIn</a>
         </div>
     </div>
 
@@ -73,16 +73,27 @@
                 of the recurrence interval of the Hayward Fault, as published in
                 <a href="https://doi.org/10.1029/2007JB004998" target="_blank">Parsons (2008)</a>.
             </p>
-            <p>
-                The goal for this project was to find if the 16-year period since the
-                method had been applied to
-                <a href="https://doi.org/10.1029/2008GL035887" target="_blank">the Hayward Fault</a>
-                was statistically significant enough to yield a better fitting value for the
-                recurrence interval. Since the last earthquake on the Fault occurred in 1868
-                <span id="haywardTimer">(over 150 years ago))</span>, and the recurrence interval
-                is thought to be close to that, we considered 16 years to be a statistically
-                significant wait.
-            </p>
+            <div class="center-row">
+                <p>
+                    The goal for this project was to find if the 16-year period since the
+                    method had been applied to
+                    <a href="https://doi.org/10.1029/2008GL035887" target="_blank">the Hayward Fault</a>
+                    was statistically significant enough to yield a better fitting value for the
+                    recurrence interval. Since the last earthquake on the Fault occurred in 1868
+                    <span id="haywardTimer">(over 150 years ago))</span>, and the recurrence interval
+                    is thought to be close to that, we considered 16 years to be a statistically
+                    significant wait.
+                </p>
+                <div class="center-column">
+                    <img class="sectPic" src="img/hayward.png">
+                    <p class="caption">
+                        Example of results from a run of thousands of simulations 
+                        using previously published error bounds for recurrence intervals
+                        (see code in repository for details).
+                    </p>
+                </div>
+            </div>
+            
             <a class="bordered" href="https://github.com/yair-franco/hayward_sequence_sim" target="_blank">
                 Visit the repository for the workflow I developed for this project.
             </a>
@@ -145,8 +156,7 @@
     </div>
 
     <div class="footer">
-        <p id="lastUpdate"></p>
+        <p id="lastUpdate">Page last edited August 28, 2025</p>
     </div>
-
 
 </body>

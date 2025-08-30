@@ -32,7 +32,7 @@ p, a {
     background-image: url("img/bg1.png");
     background-size: 100% 150px;
     opacity: 0.9;
-    height: 75px;
+    height: 100px;
 }
 
 .mainCont {
@@ -96,4 +96,12 @@ p, a {
 .note {
     font-size: 12px;
     margin: 5px;
+}
+
+.sectPic {
+    margin: 10px;
+}
+
+.caption {
+    font-size: 12px;
 }
