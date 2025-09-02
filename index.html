@@ -12,8 +12,9 @@
         <div class="linkBox center-row">
             <a class="topLink bordered" href="..">Homepage</a>
             <a class="topLink bordered" href="./cv">Curriculum Vitae</a>
-            <a class=" bordered" href="https://www.github.com/yair-franco" target="_blank">GitHub</a>
+            <a class="topLink bordered" href="https://www.github.com/yair-franco" target="_blank">GitHub</a>
             <a class="topLink bordered" href="https://www.linkedin.com/in/yair-franco/" target="_blank">LinkedIn</a>
+            <button class="topLink bordered" id="darkMode">&#x1F311</button>
         </div>
     </div>
 
@@ -23,7 +24,7 @@
                 <h1>Yair Franco</h1>
                 <p>PhD student at the University of Nevada, Reno</p>
             </div>
-            <img style="margin: 10px" src="./img/portrait.jpg" height="200px">
+            <img id="portrait" style="margin: 10px" src="./img/portrait.jpg" height="200px">
         </div>
         
         <p class="rounded">
@@ -74,18 +75,18 @@
                 <a href="https://doi.org/10.1029/2007JB004998" target="_blank">Parsons (2008)</a>.
             </p>
             <div class="center-row">
-                <p>
+                <p style="max-width: 30%;">
                     The goal for this project was to find if the 16-year period since the
                     method had been applied to
                     <a href="https://doi.org/10.1029/2008GL035887" target="_blank">the Hayward Fault</a>
                     was statistically significant enough to yield a better fitting value for the
                     recurrence interval. Since the last earthquake on the Fault occurred in 1868
-                    <span id="haywardTimer">(over 150 years ago))</span>, and the recurrence interval
+                    <span id="haywardTimer">(over 150 years ago)</span>, and the recurrence interval
                     is thought to be close to that, we considered 16 years to be a statistically
                     significant wait.
                 </p>
                 <div class="center-column">
-                    <img class="sectPic" src="img/hayward.png">
+                    <img class="sectPic" src="img/hayward.png" width="100%">
                     <p class="caption">
                         Example of results from a run of thousands of simulations 
                         using previously published error bounds for recurrence intervals

@@ -4,8 +4,17 @@ $(function() {
     $("#haywardTimer")
         .html(`(<em>${yearsSince(hayward,now)} years ago</em>)`)
         .attr("title", `Or ${daysSince(hayward,now)} days!`)
+
+    $("#darkMode").on("click", function() {
+        console.log(darkMode)
+        darkMode = !darkMode;
+        $("#darkMode").html(darkMode ? "&#x1F318" : "&#x1F311");
+        $("html").css("filter",`invert(${darkMode ? "100%":"0%"})`);
+        $("#portrait").toggle();
+    })
 })
 
+var darkMode = false;
 const hayward = "1868-10-21"
 const now = new Date();
 
