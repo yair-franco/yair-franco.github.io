@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>Yair Franco - Geocalculators</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../img/logo.png">
+    <script src="../jquery.js"></script>
+    <script src="../app.js"></script>
+    <script src="geoscripts.js"></script>
+
+    <meta property="og:url" content="https://yairfranco.com/calculators/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yair Franco - Geocalculators">
+    <meta property="og:description" content="Some fun seismology-related calculators to play around with!">
+    <meta property="og:image" content="https://yairfranco.com/img/logo.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="yairfranco.com">
+    <meta property="twitter:url" content="https://yairfranco.com/calculators/">
+    <meta name="twitter:title" content="Yair Franco - Geocalculators">
+    <meta name="twitter:description" content="Some fun seismology-related calculators to play around with!">
+    <meta name="twitter:image" content="https://yairfranco.com/img/logo.png">
+</head>
+
+<body>
+    <div class="topCont">
+        <h1 class="title bordered">Yair Franco - Geocalculators</h1>
+        <div class="linkBox center-row">
+            <a class="topLink bordered" href="..">Homepage</a>
+            <a class="topLink bordered" href="./cv">Curriculum Vitae</a>
+            <a class=" bordered" href="https://www.github.com/yair-franco" target="_blank">GitHub </a>
+            <a class="topLink bordered" href="https://www.linkedin.com/in/yair-franco/" target="_blank">LinkedIn</a>
+            <button class="topLink bordered" id="darkMode">&#x1F311</button>
+        </div>
+    </div>
+
+    <div class="mainCont center-column">
+        <div class="sectCont rounded center-column">
+            <h1>Magnitude to energy converter</h1>
+            <div class="center-row">
+                <div class="center-column">
+                    <label for="mag">Input a magnitude</label>
+                    <input type="range" id="mag" value="0" step="0.1" min="-2.0" max="10.0">
+                </div>
+                <button id="calcAll" style="margin: 50px;">Calculate</button>
+            </div>
+            <p id="magResult">Your energy will appear here</p>
+        </div>
+    </div>
+</body>
