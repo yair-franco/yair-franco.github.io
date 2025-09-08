@@ -15,8 +15,12 @@ h1, h2 {
     text-align: center;
 }
 
-p, a {
+p, a, label {
     font-family: "Trebuchet MS", sans-serif;
+}
+
+caption {
+    font-size: 12px;
 }
 
 .topCont {
@@ -109,4 +113,15 @@ p, a {
 
 .caption {
     font-size: 12px;
+}
+
+/* Geocalculator stylings below here */
+
+#magS {
+    width: 100%;
+}
+
+#magN {
+    width: 100px;
+    height: 30px;
 }

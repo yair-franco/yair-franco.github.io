@@ -1,5 +1,4 @@
 $(function() {
-    console.log("page loaded")
     // $("#lastUpdate").html(`Page last updated: ${getCurrTime(now)}`)
     $("#haywardTimer")
         .html(`(<em>${yearsSince(hayward,now)} years ago</em>)`)

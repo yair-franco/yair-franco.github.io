@@ -34,16 +34,33 @@
     </div>
 
     <div class="mainCont center-column">
+
         <div class="sectCont rounded center-column">
-            <h1>Magnitude to energy converter</h1>
-            <div class="center-row">
-                <div class="center-column">
-                    <label for="mag">Input a magnitude</label>
-                    <input type="range" id="mag" value="0" step="0.1" min="-2.0" max="10.0">
-                </div>
-                <button id="calcAll" style="margin: 50px;">Calculate</button>
-            </div>
-            <p id="magResult">Your energy will appear here</p>
+            <h1>Magnitude converter</h1>
+            <p>Select output type</p>
+                    <div class="center-row">
+                        <div class="center-column bordered">
+                            <label for="moment" style="margin: 0px 10px;">Moment</label>
+                            <input type="radio" id="moment" name="magTo" value="moment" checked />
+                        </div>
+                        <div class="center-column bordered">
+                            <label for="area" style="margin: 0px 10px;">Rupture area</label>
+                            <input type="radio" id="area" name="magTo" value="area"/>
+                        </div>
+                    </div>
+            <p>Input your magnitude</p>
+                    <div class="center-column bordered">
+                        <input type="range" id="magS" value="4.5" step="0.1" min="-2.0" max="10.0">
+                        <input type="number" id="magN" value="4.5" step="0.1">
+                    </div>
+                <p class="caption" style="max-width: 40%;">(Slider limits are [-2.0, 10.0], but you can use the box to input quantities further out of range)</caption>
+
+            <p id="magResult" class="bordered">Your output will appear here</p>
+            <p class="caption">
+                Rupture area estimation from
+                <a href="https://doi.org/10.1785/BSSA0840040974" target="_blank">Wells & Coppersmith, 1994</a>.
+            </p>
         </div>
+
     </div>
 </body>
