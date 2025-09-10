@@ -125,3 +125,10 @@ caption {
     width: 100px;
     height: 30px;
 }
+
+.stressTensorLine {
+    width: 80%;
+    margin: 3px 0px;
+    text-align: justify;
+    text-justify: inter-word;
+}

@@ -5,6 +5,7 @@
     <link rel="icon" href="../img/logo.png">
     <script src="../jquery.js"></script>
     <script src="../app.js"></script>
+    <script src="math.js"></script>
     <script src="geoscripts.js"></script>
 
     <meta property="og:url" content="https://yairfranco.com/calculators/">
@@ -60,6 +61,61 @@
                 Rupture area estimation from
                 <a href="https://doi.org/10.1785/BSSA0840040974" target="_blank">Wells & Coppersmith, 1994</a>.
             </p>
+        </div>
+
+        <div class="sectCont rounded center-column">
+            <h1>Fault plane vector calculator</h1>
+            <div class="center-row">
+                <div class="center-column bordered">
+                    <label for="strike" style="margin: 0px 10px;">Strike (degrees)</label>
+                    <input type="number" id="strike" value="0" step="1" max="180" min="-180">
+                </div>
+               
+                <div class="center-column bordered">
+                    <label for="dip" style="margin: 0px 10px;">Dip (degrees)</label>
+                    <input type="number" id="dip" value="45" step="1" max="90" min="0">   
+                </div>
+            </div>
+
+            <div class="center-column">
+                <p id="vecResult" class="bordered">Your vector components will appear here</p>
+                <p class="caption">(This is a normal vector pointing into the footwall of the fault)</p>
+            </div>
+        </div>
+
+        <div class="sectCont rounded center-column">
+            <h1>Traction to stress tensor converter</h1>
+            <div class="center-row">
+                <div class="center-column bordered">
+                    <label for="Tn">Tn</label>
+                    <input type="number" id="Tn" value="0">
+                </div>
+                <div class="center-column bordered">
+                    <label for="Td">Td</label>
+                    <input type="number" id="Td" value="0">
+                </div>
+                <div class="center-column bordered">
+                    <label for="Ts">Ts</label>
+                    <input type="number" id="Ts" value="0">             
+                </div>
+            </div>
+            <div class="center-row">
+                <div class="center-column bordered">
+                    <label for="dipT">Dip</label>
+                    <input type="number" id="dipT" value="0" min="0" max="90">
+                </div>
+                <div class="center-column bordered">
+                    <label for="strikeT">Strike</label>
+                    <input type="number" id="strikeT" value="0" min="-180" max="180">
+                </div>
+                <div class="center-column bordered">
+                    <label for="digits">Round to</label>
+                    <input type="number" id="digits" value="5" step="1" max="10" min="0">
+                    <p style="margin: 0px;">digits</p>
+                </div>
+            </div>
+            <p class="bordered" id="stressResult">Your stress tensor will appear here.</p>
+            <p class="caption" id="tWarn"></p>
         </div>
 
     </div>
