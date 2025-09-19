@@ -7,9 +7,9 @@ $(function() {
     $("#darkMode").on("click", function() {
         console.log(darkMode)
         darkMode = !darkMode;
-        $("#darkMode").html(darkMode ? "&#x1F318" : "&#x1F311");
-        $("html").css("filter",`invert(${darkMode ? "100%":"0%"})`);
-        $("#portrait").toggle();
+        $("html:not(#portrait)").css("filter",`invert(${darkMode ? "100%":"0%"})`);
+        $("#portrait").css("filter", `invert(${darkMode ? "100%":"0%"})`);
+        // $("#portrait").toggle();
     })
 })
 

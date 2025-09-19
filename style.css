@@ -39,6 +39,11 @@ caption {
     height: 100px;
 }
 
+#darkMode {
+    height: 15px;
+    width: auto;
+}
+
 .mainCont {
     flex-grow: 1;
 }
