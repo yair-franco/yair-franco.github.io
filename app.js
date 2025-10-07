@@ -1,8 +1,12 @@
 $(function() {
     // $("#lastUpdate").html(`Page last updated: ${getCurrTime(now)}`)
     $("#haywardTimer")
-        .html(`(<em>${yearsSince(hayward,now)} years ago</em>)`)
+        .html(`(<span class='hoverable'>${yearsSince(hayward,now)} years ago</span>)`)
         .attr("title", `Or ${daysSince(hayward,now)} days!`)
+
+    $("#lastUpdate")
+        .html(`Page last updated ${lastModifiedString}`)
+        .attr("title", `(${daysSince(lastModified,now)} days ago)`)
 
     $("#darkMode").on("click", function() {
         console.log(darkMode)
@@ -16,6 +20,10 @@ $(function() {
 var darkMode = false;
 const hayward = "1868-10-21"
 const now = new Date();
+
+const lastModified = document.lastModified;
+const options = { year: 'numeric', month: 'long', day: 'numeric' }
+const lastModifiedString = new Date(lastModified).toLocaleDateString('en-US', options)
 
 function getCurrTime(today) {
     return today.toString();
