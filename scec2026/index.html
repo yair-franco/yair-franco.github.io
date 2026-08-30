@@ -21,7 +21,7 @@
 
 <body>
     <div class="topCont">
-        <h1 class="title bordered">Yair Franco - SCEC 2026 Poster</h1>
+        <h1 class="title bordered">Yair Franco - SCEC 2026</h1>
         <div class="linkBox center-row">
             <a class="topLink bordered" href="..">Homepage</a>
             <a class="topLink bordered" href="../cv">Curriculum Vitae</a>
@@ -33,7 +33,7 @@
                     <a class="topLink bordered" href="../agu2023/">AGU 2023</a>
                     <a class="topLink bordered" href="../agu2025/">AGU 2025</a>
                     <a class="topLink bordered" href="../ssa2026/">SSA 2026</a>
-                    <a class="topLink bordered" href="./scec2026/">SCEC 2026</a>
+                    <a class="topLink bordered" href="../scec2026/">SCEC 2026</a>
                 </div>
             </div>
             <img class="topLink bordered" src="../img/darkmode_icon.png" id="darkMode">
@@ -42,12 +42,175 @@
 
 
     <div class="mainCont center-column">
-        <div class="bordered">
-            <h1>This page will contain supplemental material for my SCEC 2026 poster</h1>
+        <div class="sectCont bordered">
+            <h1>NORMAL FAULT DYNAMIC RUPTURE SIMULATION SUITE</h1>
+            <h2>Additional Material</h2>
+        </div>
+
+        <div class="sectCont bordered center-column">
+            <a class="rounded center-column" 
+               id="downloadPoster"
+               href="./franco_scec2026.pdf">
+               Click here to download a PDF version of my poster</a>
+        </div>
+
+        <div class="sectCont bordered center-column">
+            <h1>Selected Simulation Results</h1>
+            
+            <div class="bordered center-column">
+                <h2>Reno Scenario</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Fault dip</th>
+                            <td>55°</td>
+                        </tr>
+                        <tr>
+                            <th>Nucleation method</th>
+                            <td>Low-friction patch</td>
+                        </tr>
+                        <tr>
+                            <th>Plasticity</th>
+                            <td>On</td>
+                        </tr>
+                        <tr>
+                            <th>Simulation length</th>
+                            <td>45 s</td>
+                        </tr>
+                        <tr>
+                            <th>Time steps</th>
+                            <td>0.25 s</td>
+                        </tr>
+                        <caption>
+                            Simulation setup loosely based on 
+                            <a href="https://strike.scec.org/cvws/download/TPV12_13_Description_v6.pdf" target="_blank">TPV 13</a>
+                        </caption>
+                    </tbody>
+                </table>
+                <div class="center-row">
+                    <img class="sectPic shadow" src="img/reno_moment.png" height="250px">
+                    <img class="sectPic shadow" src="img/reno_fault.png" height="250px">
+                </div>
+                <img class="sectPic shadow" src="img/reno_gms.png" height="250px">
+                <p class="caption">Please note the title in this figure is a correction from the poster, but it is the same data.</p>
+            </div>
+
+            <div class="bordered center-column">
+                <h2>Variable Dip Scenarios</h2>
+                <p>
+                    Visit the additional material page for my 
+                    <a href="../agu2025/" target="_blank">AGU 2025 poster</a>
+                    to see the real-time animations for these simulations.
+                </p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Nucleation method</th>
+                            <td>High-stress patch</td>
+                        </tr>
+                        <tr>
+                            <th>Plasticity</th>
+                            <td>Off</td>
+                        </tr>
+                        <tr>
+                            <th>Simulation length</th>
+                            <td>30 s</td>
+                        </tr>
+                        <tr>
+                            <th>Time steps</th>
+                            <td>0.1 s</td>
+                        </tr>
+                        <tr>
+                            <th>Nucleation patch depth</th>
+                            <td>12 km downdip</td>
+                        </tr>
+                    </tbody>
+                    <caption>
+                        These attributes apply to all simulations below unless otherwise noted.
+                    </caption>
+                </table>
+
+                <h3 style="padding-top: 20px;">25° case</h3>
+                <div class="center-row">
+                    <img class="sectPic shadow" src="img/tpv10t_d25_a_moment.png" height="250px">
+                    <img class="sectPic shadow" src="img/tpv10t_d25_a_fault.png" height="250px">
+                </div>
+                <img class="sectPic shadow" src="img/tpv10t_d25_a_gms.png" height="250px">
+
+                <h3 style="padding-top: 20px;">45° case</h3>
+                <div class="center-row">
+                    <img class="sectPic shadow" src="img/tpv10t_d45_a_moment.png" height="250px">
+                    <img class="sectPic shadow" src="img/tpv10t_d45_a_fault.png" height="250px">
+                </div>
+                <img class="sectPic shadow" src="img/tpv10t_d45_a_gms.png" height="250px">
+
+                <h3 style="padding-top: 20px;">
+                    60° case (<a href="https://strike.scec.org/cvws/download/TPV10_11_Description_v7.pdf" target="_blank">TPV 10</a>)
+                </h3>
+                <div class="center-row">
+                    <img class="sectPic shadow" src="img/tpv10t_d60_moment.png" height="250px">
+                    <img class="sectPic shadow" src="img/tpv10t_d60_fault.png" height="250px">
+                </div>
+                <img class="sectPic shadow" src="img/tpv10t_d60_gms.png" height="250px">
+
+                <h3 style="padding-top: 20px;">75° case</h3>
+                <div class="center-row">
+                    <img class="sectPic shadow" src="img/tpv10t_d75_a_moment.png" height="250px">
+                    <img class="sectPic shadow" src="img/tpv10t_d75_a_fault.png" height="250px">
+                </div>
+                <img class="sectPic shadow" src="img/tpv10t_d75_a_gms.png" height="250px">
+            </div>
+            
+            <div class="bordered center-column">
+                <h2>Reverse-slip scenarios</h2>
+                <h3>25° case</h3>
+                <div class="center-row">
+                    <img class="sectPic shadow" src="img/tpv10t_d25_r_a_moment.png" height="250px">
+                    <img class="sectPic shadow" src="img/tpv10t_d25_r_a_fault.png" height="250px">
+                </div>
+                <img class="sectPic shadow" src="img/tpv10t_d25_r_a_gms.png" height="250px">
+
+                <h3 style="padding-top: 20px;">60° case</h3>
+                <div class="center-row">
+                    <img class="sectPic shadow" src="img/tpv10t_d60_r_b_moment.png" height="250px">
+                    <img class="sectPic shadow" src="img/tpv10t_d60_r_b_fault.png" height="250px">
+                </div>
+                <img class="sectPic shadow" src="img/tpv10t_d60_r_b_gms.png" height="250px">
+
+                <h3 style="padding-top: 20px;">75° case</h3>
+                <div class="center-row">
+                    <img class="sectPic shadow" src="img/tpv10t_d75_r_a_moment.png" height="250px">
+                    <img class="sectPic shadow" src="img/tpv10t_d75_r_a_fault.png" height="250px">
+                </div>
+                <img class="sectPic shadow" src="img/tpv10t_d75_r_a_gms.png" height="250px">
+            </div>
+            
+            <div class="bordered center-column">
+                <h2>Shallow nucleation scenario</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Nucleation patch depth</th>
+                            <td>8 km downdip</td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="center-row">
+                    <img class="sectPic shadow" src="img/tpv10t_d60_8km_a_moment.png" height="250px">
+                    <img class="sectPic shadow" src="img/tpv10t_d60_8km_a_fault.png" height="250px">
+                </div>
+                <img class="sectPic shadow" src="img/tpv10t_d60_8km_a_gms.png" height="250px">
+            </div>
         </div>
         
 
     </div>
 
+    <div class="footer">
+        <p id="lastUpdate"></p>
+        <p>Email: <a href="mailto:yfranco@unr.edu">yfranco@unr.edu</a></p>
+        <img src="../img/logo.png" title="My awesome logo!" width="40px">
+    </div>
 
 </body>

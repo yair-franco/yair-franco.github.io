@@ -50,6 +50,16 @@ iframe {
     width: 640px;
 }
 
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
 .topCont {
     top: 0;
     position: sticky;
@@ -185,6 +195,10 @@ iframe {
 
 .sectPic {
     margin: 10px;
+}
+
+.shadow {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
 }
 
 .caption {
